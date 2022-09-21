@@ -1,0 +1,135 @@
+Model Summary:
+
+-----------------------------------------------------------------------
+             Layer (type)                Input Shape         Param #
+=======================================================================
+                EncoderN                   [N, 30]               0
+              Embedding-2                   [N, 30]          50,592
+              Embedding-3                   [N, 30]          24,800
+                Dropout-4              [N, 30, 248]               0
+           EncoderLayer-5              [N, 30, 248]               0
+MultiHeadAttentionLayer-6              [N, 30, 248]               0
+                 Linear-7              [N, 30, 248]          61,752
+                 Linear-8              [N, 30, 248]          61,752
+                 Linear-9              [N, 30, 248]          61,752
+               DropoutN0            [N, 8, 30, 30]               0
+                LinearN1              [N, 30, 248]          61,752
+               DropoutN2              [N, 30, 248]               0
+             LayerNormN3              [N, 30, 248]             496
+PositionwiseFeedforwardLayerN4        [N, 30, 248]               0
+                LinearN5              [N, 30, 248]         127,488
+               DropoutN6              [N, 30, 512]               0
+                LinearN7              [N, 30, 512]         127,224
+               DropoutN8              [N, 30, 248]               0
+             LayerNormN9              [N, 30, 248]             496
+          EncoderLayer-20              [N, 30, 248]               0
+MultiHeadAttentionLayer-21             [N, 30, 248]               0
+                Linear-22              [N, 30, 248]          61,752
+                Linear-23              [N, 30, 248]          61,752
+                Linear-24              [N, 30, 248]          61,752
+               Dropout-25            [N, 8, 30, 30]               0
+                Linear-26              [N, 30, 248]          61,752
+               Dropout-27              [N, 30, 248]               0
+             LayerNorm-28              [N, 30, 248]             496
+PositionwiseFeedforwardLayer-29        [N, 30, 248]               0
+                Linear-30              [N, 30, 248]         127,488
+               Dropout-31              [N, 30, 512]               0
+                Linear-32              [N, 30, 512]         127,224
+               Dropout-33              [N, 30, 248]               0
+             LayerNorm-34              [N, 30, 248]             496
+          EncoderLayer-35              [N, 30, 248]               0
+MultiHeadAttentionLayer-36             [N, 30, 248]               0
+                Linear-37              [N, 30, 248]          61,752
+                Linear-38              [N, 30, 248]          61,752
+                Linear-39              [N, 30, 248]          61,752
+               Dropout-40              [N, 8, 30, 30]             0
+                Linear-41              [N, 30, 248]          61,752
+               Dropout-42              [N, 30, 248]               0
+             LayerNorm-43              [N, 30, 248]             496
+PositionwiseFeedforwardLayer-44        [N, 30, 248]               0
+                Linear-45              [N, 30, 248]         127,488
+               Dropout-46              [N, 30, 512]               0
+                Linear-47              [N, 30, 512]         127,224
+               Dropout-48              [N, 30, 248]               0
+             LayerNorm-49              [N, 30, 248]             496
+               Decoder-50                   [N, 30]               0
+             Embedding-51                   [N, 30]         475,912
+             Embedding-52                   [N, 30]          24,800
+               Dropout-53              [N, 30, 248]               0
+          DecoderLayer-54              [N, 30, 248]               0
+MultiHeadAttentionLayer-55              [N, 30, 248]              0
+                Linear-56              [N, 30, 248]          61,752
+                Linear-57              [N, 30, 248]          61,752
+                Linear-58              [N, 30, 248]          61,752
+               Dropout-59            [N, 8, 30, 30]               0
+                Linear-60              [N, 30, 248]          61,752
+               Dropout-61              [N, 30, 248]               0
+             LayerNorm-62              [N, 30, 248]             496
+MultiHeadAttentionLayer-63              [N, 30, 248]              0
+                Linear-64              [N, 30, 248]          61,752
+                Linear-65              [N, 30, 248]          61,752
+                Linear-66              [N, 30, 248]          61,752
+               Dropout-67            [N, 8, 30, 30]               0
+                Linear-68              [N, 30, 248]          61,752
+               Dropout-69              [N, 30, 248]               0
+             LayerNorm-70              [N, 30, 248]             496
+PositionwiseFeedforwardLayer-71        [N, 30, 248]               0
+                Linear-72              [N, 30, 248]         127,488
+               Dropout-73              [N, 30, 512]               0
+                Linear-74              [N, 30, 512]         127,224
+               Dropout-75              [N, 30, 248]               0
+             LayerNorm-76              [N, 30, 248]             496
+          DecoderLayer-77              [N, 30, 248]               0
+MultiHeadAttentionLayer-78              [N, 30, 248]              0
+                Linear-79              [N, 30, 248]          61,752
+                Linear-80              [N, 30, 248]          61,752
+                Linear-81              [N, 30, 248]          61,752
+               Dropout-82            [N, 8, 30, 30]               0
+                Linear-83              [N, 30, 248]          61,752
+               Dropout-84              [N, 30, 248]               0
+             LayerNorm-85              [N, 30, 248]             496
+MultiHeadAttentionLayer-86              [N, 30, 248]              0
+                Linear-87              [N, 30, 248]          61,752
+                Linear-88              [N, 30, 248]          61,752
+                Linear-89              [N, 30, 248]          61,752
+               Dropout-90            [N, 8, 30, 30]               0
+                Linear-91              [N, 30, 248]          61,752
+               Dropout-92              [N, 30, 248]               0
+             LayerNorm-93              [N, 30, 248]             496
+PositionwiseFeedforwardLayer-94        [N, 30, 248]               0
+                Linear-95              [N, 30, 248]         127,488
+               Dropout-96              [N, 30, 512]               0
+                Linear-97              [N, 30, 512]         127,224
+               Dropout-98              [N, 30, 248]               0
+             LayerNorm-99              [N, 30, 248]             496
+         DecoderLayerN00              [N, 30, 248]               0
+MultiHeadAttentionLayerN01            [N, 30, 248]               0
+               LinearN02              [N, 30, 248]          61,752
+               LinearN03              [N, 30, 248]          61,752
+               LinearN04              [N, 30, 248]          61,752
+              DropoutN05            [N, 8, 30, 30]               0
+               LinearN06              [N, 30, 248]          61,752
+              DropoutN07              [N, 30, 248]               0
+            LayerNormN08              [N, 30, 248]             496
+MultiHeadAttentionLayerN09            [N, 30, 248]               0
+               LinearN10              [N, 30, 248]          61,752
+               LinearN11              [N, 30, 248]          61,752
+               LinearN12              [N, 30, 248]          61,752
+              DropoutN13            [N, 8, 30, 30]               0
+               LinearN14              [N, 30, 248]          61,752
+              DropoutN15              [N, 30, 248]               0
+            LayerNormN16              [N, 30, 248]             496
+PositionwiseFeedforwardLayerN17       [N, 30, 248]               0
+               LinearN18              [N, 30, 248]         127,488
+              DropoutN19              [N, 30, 512]               0
+               LinearN20              [N, 30, 512]         127,224
+              DropoutN21              [N, 30, 248]               0
+            LayerNormN22              [N, 30, 248]             496
+               LinearN23              [N, 30, 248]         477,831
+=======================================================================
+Total params: 4,812,719
+Trainable params: 4,812,719
+Non-trainable params: 0
+N: Batch Size
+
+
